@@ -163,7 +163,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Moelshafey ©2026',
+                        'Mostafa Riad ©2026',
                         style: GoogleFonts.cairo(
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
