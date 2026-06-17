@@ -11,7 +11,7 @@ class AppInfoScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.scaffoldBackground,
       appBar: AppBar(
-        title: const Text('عن التطبيق'),
+        title: const Text('حول التطبيق'),
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
@@ -57,7 +57,7 @@ class AppInfoScreen extends StatelessWidget {
               ),
             ),
             Text(
-              'مساعدك الطبي الذكي',
+              'المساعد الطبي الذكي',
               style: GoogleFonts.cairo(
                 fontSize: 16,
                 fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class AppInfoScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Text(
-                'الاصدار 5.0.0',
+                'الاصدار 1.0.0',
                 style: GoogleFonts.cairo(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
@@ -94,13 +94,13 @@ class AppInfoScreen extends StatelessWidget {
               content: '• بحث ذكي وشامل عن الأدوية\n'
                        '• معرفة البدائل المتاحة\n'
                        '• حفظ الأدوية المفضلة\n'
-                       '• يتطلب اتصالاً بالإنترنت للبحث',
+                       '• يتطلب اتصالاً بسيطاً بالإنترنت للبحث',
               icon: Icons.auto_awesome_rounded,
             ),
 
             _buildInfoCard(
-              title: 'تطوير وتصميم',
-              content: 'تم تطوير هذا التطبيق بحب لخدمة المجتمع الطبي والمرضى في مصر.\n\nالمطور: MOELSHAFEY',
+              title: 'التطوير',
+              content: 'تم تطوير هذا التطبيق بحب لخدمة المجتمع الطبي والمرضى في مصر..\n\nالمطور: Mostafa Raid - مصطفى رياض',
               icon: Icons.code_rounded,
             ),
 
@@ -186,7 +186,7 @@ class AppInfoScreen extends StatelessWidget {
             children: [
               const Icon(Icons.contact_support_rounded, color: AppColors.primary, size: 24),
               const SizedBox(width: 12),
-              levelText('تواصل مع المطور', size: 18, weight: FontWeight.bold),
+              levelText('للتواصل مع المطور', size: 18, weight: FontWeight.bold),
             ],
           ),
           const SizedBox(height: 8),
@@ -202,7 +202,7 @@ class AppInfoScreen extends StatelessWidget {
           Material(
             color: Colors.transparent,
             child: InkWell(
-              onTap: () => _launchTelegram('MO_SH_FY'),
+              onTap: () => _launchTelegram('mostafa_riad'),
               borderRadius: BorderRadius.circular(16),
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
@@ -223,7 +223,7 @@ class AppInfoScreen extends StatelessWidget {
                     const Icon(Icons.send_rounded, color: Colors.white, size: 20),
                     const SizedBox(width: 12),
                     Text(
-                      'مراسلة عبر تليجرام',
+                      'التواصل من خلال التليجرام',
                       style: GoogleFonts.cairo(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
